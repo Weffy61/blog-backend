@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block title %}
-{{ post.title }} - Blog Details
+  {{ post.title }} - Blog Details
 {% endblock %}
 
 {% block content %}
@@ -35,8 +35,8 @@
               <img class="img-fluid" src="{{ post.image_url }}" alt="Image for post">
             {% else %}
               <img class="img-fluid" src="{% static 'img/banner/blog.png' %}">
-              <h4> {{ post.title }} <br/> A Discount Toner</h4>
             {% endif %}
+          <h4> {{ post.title }}</h4>
             <div class="user_details">
               <div class="mt-sm-0 mt-3">
                 <div class="media">
@@ -113,5 +113,4 @@
     </div>
   </section>
   <!--================ End Blog Post Area =================-->
-
 {% endblock %}
